@@ -17,16 +17,16 @@
     <nav class="d-flex justify-content-center bg-dark p-0 fixed-top">
         <ul class="nav justify-content-around p-2 w-75">
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">HOME</a>
+                <a class="nav-link text-white" href="#bg1">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">COLLECTION</a>
+                <a class="nav-link text-white" href="#CatalogueHeader">COLLECTION</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">ABOUT US</a>
+                <a class="nav-link text-white" href="#AboutUs">ABOUT US</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">CONTACT</a>
+                <a class="nav-link text-white" href="#Contact">CONTACT</a>
             </li>
         </ul>
     </nav>
@@ -45,7 +45,7 @@
     </section>
 </header>
 <!--Catalogue Header-->
-<section class="py-5 mx-2 d-flex justify-content-center">
+<section id="CatalogueHeader" class="py-5 mx-2 d-flex justify-content-center">
     <div id="banner1" class="pt-5 pb-4 w-50 lead text-center">
         <h1 class="display-4">
             SHOP OUR COLLECTION
@@ -60,7 +60,7 @@
 </section>
 
 <!--Catalogue-->
-<section>
+<section id="Catalogue">
     <div class="pb-5 mx-5 d-flex justify-content-center">
         <div class="card-group">
             <div class="card mx-4">
@@ -229,7 +229,7 @@
 </section>
 
 <!--About Us-->
-<section class="videoContainer d-flex align-items-center">
+<section id="AboutUs" class="videoContainer d-flex align-items-center">
     <video autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
         <source src="https://video.wixstatic.com/video/11062b_fae1d456c92348a599ffb230a447bd1c/1080p/mp4/file.mp4" type="video/mp4">
     </video>
@@ -241,6 +241,78 @@
     </div>
 </section>
 
+<!--Gallery-->
+<section id="Gallery">
+    <div class="d-flex justify-content-center">
+        <div class="card-group">
+            <div class="card m-4 p-4 text-center shadow">
+                <img class="display" src="https://static.wixstatic.com/media/a858c7_e99f6df37e3f422bbf27d46b999cdece~mv2_d_4000_4000_s_4_2.jpg/v1/fill/w_178,h_178,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a858c7_e99f6df37e3f422bbf27d46b999cdece~mv2_d_4000_4000_s_4_2.jpg" alt="Card image">
+                <p class="card-title lead">Finials for Curtain Rods</p>
+            </div>
+            
+            <div class="card m-4 p-4 text-center shadow">
+                <img class="display" src="https://static.wixstatic.com/media/a858c7_c54b402e79af4959ace81698e34e05b2~mv2.jpg/v1/fill/w_178,h_178,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a858c7_c54b402e79af4959ace81698e34e05b2~mv2.jpg" alt="Card image">
+                <p class="card-title lead">Brackets for Curtain Rods</p>
+            </div>
+            
+            <div class="card m-4 p-4 text-center shadow">
+                <img class="display" src="https://static.wixstatic.com/media/a858c7_0534acce64024a889cc41100a37dea57~mv2.jpg/v1/fill/w_178,h_178,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a858c7_0534acce64024a889cc41100a37dea57~mv2.jpg" alt="Card image">
+                <p class="card-title lead">Curtain Rings</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Contact Us-->
+<section id="Contact" class="p-5"> 
+    <div class="container-fluid text-center p-5">
+        <h1 class="display-4">
+            Contact Us
+        </h1>
+        <p class="lead">
+            info@ivilon.com
+        </p>
+        <hr>
+        <form>
+            <div class="form-row">
+                <div class="form-group w-50 my-0">
+                    <input type="text" class="form-control" name="firstName" placeholder="First Name">
+                </div>
+                <div class="form-group w-50 my-0">
+                    <input type="text" class="form-control" name="lastName" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group w-50 my-0">
+                    <input type="text" class="form-control" name="email" placeholder="Email">
+                </div>
+                <div class="form-group w-50 my-0">
+                    <input type="text" class="form-control" name="orderNum" placeholder="Order#">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group w-100">
+                    <textarea name="message" class="form-control" placeholder="Type your message here..."></textarea>
+                </div>
+            </div>
+                <div class="d-flex justify-content-end">
+                    <input class="btn bg-dark text-light" type="submit" value="Submit" name="">
+                </div>
+        </form>
+    </div>
+</section>
+
+<!--Footer-->
+<footer class="bg-dark text-center text-white d-flex flex-column justify-content-around p-4">
+    <div id="socialLogo" class="d-flex justify-content-center">
+        <img class="p-2"src="https://static.wixstatic.com/media/e0678ef25486466ba65ef6ad47b559e1.png/v1/fill/w_40,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e0678ef25486466ba65ef6ad47b559e1.png" alt="Logo">
+        <img class="p-2"src="https://static.wixstatic.com/media/767689ba34f143a1a36e49b5f2fbe31a.png/v1/fill/w_40,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/767689ba34f143a1a36e49b5f2fbe31a.png" alt="Logo">
+        <img class="p-2"src="https://static.wixstatic.com/media/17f992598001435083075924d7b6ae80.png/v1/fill/w_40,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/17f992598001435083075924d7b6ae80.png" alt="Logo">
+    </div>
+    <p>
+        Created by Jiminy Cao
+    </p>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

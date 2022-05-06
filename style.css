@@ -15,7 +15,7 @@ body{
     padding-top: 150px;
 }
 
-#socialLogo{
+header #socialLogo{
     position: relative;
     top:80%;
 }
@@ -31,7 +31,8 @@ body{
     margin:auto, 0;
 }
 
-.card-group{
+#Catalogue .card-group{
+    justify-content: space-between;
     width: 50%;
     margin-bottom: 200px;
 }
@@ -84,7 +85,6 @@ body{
 }
 
 .videoContainer{
-    margin-bottom: 100px;
     height: 800px;
     width: 100%;
     padding-bottom: 50px;
@@ -101,7 +101,7 @@ body{
     z-index: -1;
 }
 
-.videoContainer h1{
+#AboutUs h1, #Contact h1{
     font-weight: 350;
     font-size:xx-large;
 }
@@ -113,9 +113,79 @@ body{
     height: 70%;
     width: 35%;
 }
-#aboutBox hr{
+#aboutBox hr, #Contact hr{
     background-color: black;
     width: 10%;
     height: 2px;
     margin:auto, 0;
+    margin-bottom:35px;
+}
+
+#Gallery .card-group{
+    width: 50%;
+    margin: 100px;
+}
+
+.display{
+    opacity: 100%;
+    transition: opacity 0.3s;
+}
+
+.display:hover{
+    opacity: 0%;
+}
+
+#Contact{
+    background-color: #b0aaa9;
+    height: 650px;
+}
+
+#Contact .container-fluid{
+    background-color: white;
+    width: 40%;
+}
+
+#Contact p{
+    font-size: x-large;
+}
+
+.form-row input[type="text"]{
+	font-family: Georgia;
+    font-style: italic;
+	padding: 35px 25px;
+	width:100%;
+	letter-spacing:0;
+    border-radius: 0;
+    border:none;
+    outline: 2px solid black;
+
+}
+.form-row textarea{
+	font-family: Georgia;
+    font-style: italic;
+    resize: none;
+	padding: 10px 25px;
+    padding-bottom: 50px;
+	width:100%;
+	letter-spacing:0;
+    border-radius: 0;
+    border:none;
+    outline: 2px solid black;
+}
+
+.form-control:focus{
+    border: none;
+    outline: 2px solid black;
+    box-shadow: none;
+}
+
+form input[type=submit]{
+    padding: 10px;
+    margin-top: 10px;
+    width: 33%;
+    border-radius: 0;
+}
+
+footer{
+    height: 150px;
 }
