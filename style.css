@@ -1,3 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fafafa;
+}
 #bg1{
     background: url("https://static.wixstatic.com/media/a858c7_0c8cd4cb13b747ecac8c4fe16ee515fd~mv2_d_2000_1335_s_2.jpg/v1/fill/w_1903,h_1124,al_b,q_90,usm_0.66_1.00_0.01,enc_auto/a858c7_0c8cd4cb13b747ecac8c4fe16ee515fd~mv2_d_2000_1335_s_2.jpg");
     background-attachment: fixed;
@@ -18,16 +24,98 @@
     background-color: #d1cac9;
 }
 
-hr{
+#banner1 hr{
     background-color: black;
     width: 20%;
     height: 2px;
     margin:auto, 0;
 }
 
-.card-body{
-    background-color: #d1cac9;
+.card-group{
+    width: 50%;
+    margin-bottom: 200px;
 }
+
+.card{
+    border:none;
+    width: 450px;
+}
+
+.card-body{
+    position: absolute;
+    background-color: #d1cac9;
+    top: 100%;
+    z-index: 1;
+}
+
 .card-text{
+    padding: 3px;
     text-align: center;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.card-img-top{
+    background-color: white;
+    padding:50px 0px;
+}
+
+.hoverText{
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 2px;
+    top: 100%;
+    width: 100%;
+    padding: 20px 0px;
+    transition: top 750ms;
+}
+
+.buyBtn{
+    background-color: transparent;
+    border: none;
+    outline: solid 1px;
+}
+.card-img-top:hover + .hoverText{
+    top: 72%;
+}
+
+.buyBtn:hover{
+    outline: solid 2px;
+}
+
+.videoContainer{
+    margin-bottom: 100px;
+    height: 800px;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    overflow-x: hidden;
+    position: relative;
+
+}
+.videoContainer video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.videoContainer h1{
+    font-weight: 350;
+    font-size:xx-large;
+}
+
+#aboutBox{
+    padding: 0px 100px;
+    line-height: 24px;
+    background-color: white;
+    height: 70%;
+    width: 35%;
+}
+#aboutBox hr{
+    background-color: black;
+    width: 10%;
+    height: 2px;
+    margin:auto, 0;
 }
